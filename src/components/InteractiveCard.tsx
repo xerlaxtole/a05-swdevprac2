@@ -6,11 +6,11 @@ export default function InteractiveCard({ children }: { children: ReactNode }) {
 
   return (
     <div
-      className={`w-full h-full rounded-lg overflow-hidden transition-colors duration-200 ${
+      className={`w-full h-full rounded-lg overflow-hidden text-neutral-900 transition-colors duration-200 ${
         hovered ? 'shadow-2xl bg-neutral-200' : 'shadow-lg bg-white'
       }`}
-      onMouseOver={() => setHovered(true)}
-      onMouseOut={() => setHovered(false)}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       {children}
     </div>
