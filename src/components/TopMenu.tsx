@@ -7,7 +7,7 @@ export default function TopMenu() {
       <div className="flex items-center">
         <TopMenuItem title="Booking" pageRef="/booking" />
       </div>
-      <Image src="/img/logo.png" alt="Venue Explorer logo" width={120} height={40} className="h-10 w-auto" />
+      <Image src="/img/logo.png" alt="Venue Explorer logo" width={40} height={40} className="h-10 w-auto" />
     </nav>
   )
 }
